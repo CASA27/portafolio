@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: becae4;
+}
+
+
+header{
+    width: 100%;
+    height: 60px;
+    padding: 3px;
+}
+
+header img{
+    margin-left: 95px;
+    padding: 2px;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+}
+
+section{
+    height: 100%;
+    background-color: white;
+}
+
+.seccion_1{
+    width: 60%;
+       
+}
+
+.seccion_2 {
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px gray;
+
+}
+
+.contenedor_imagen{
+    padding-bottom: 5px;
+    width: 100%;
+    height: 60%;
+    padding-top: 20px;
+    text-align: center;
+    display: flex; /* Utilizamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+}
+
+.contenedor_subtitulo{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.contenedor_parrafo{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-top: -90px;
+}
+
+.textarea{
+    width: 80%;
+    height: 60%;
+    resize: none;
+    display: block;
+    margin: auto;
+    margin-left: 20%;
+    margin-top: 20px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+
+}
+
+.boton_copiar{
+    background-color: midnightblue;
+    color: white;
+    font-size: 20px;
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px; /* Agregamos margen superior para centrar verticalmente */
+}
+
+.contenedor_botones {
+    position: fixed; /* Fija la posición */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    width: 60%; /* Para que ocupen el ancho completo */
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.boton_encriptar, .boton_desencriptar{
+    width: 30%;
+    height: 40px;
+}
+
+.boton_encriptar{
+    background-color: midnightblue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.boton_desencriptar{
+    background-color: midnightblue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+
+.boton_encriptar:hover{
+    background-color: grey;
+    color:black;
+}
+
+.boton_desencriptar:hover{
+    background-color: grey;
+    color:black;
+}
+
+footer{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    color: grey;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    header img {
+        margin-left: 10px; /* Reducimos aún más el margen izquierdo */
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo aplicacion">
+    </header>
+    <main>
+        <section class="seccion_1">
+            <textarea id="inputText" class="textarea" placeholder="Escribe tu texto aquí"></textarea>
+            <div class="contenedor_botones">
+                <input type="button" value="Encriptar" class="boton_encriptar" onclick="encrypt()">
+                <input type="button" value="Desencriptar" class="boton_desencriptar" onclick="decrypt()">
+            </div>
+        </section>
+        <section class="seccion_2">
+            <div class="contenedor_imagen">
+                <img src="muneco.png" alt="Muneco">
+            </div>
+            <div class="contenedor_subtitulo">
+                <h3 id="resultTitle">Ningún mensaje fue encontrado</h3>
+            </div>
+            <div class="contenedor_parrafo">
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea id="outputText" class="textarea"readonly></textarea>
+                <input type="button" value="Copiar" class="boton_copiar" onclick="copyToClipboard()">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2024 Carlos Sanchez. Todos los derechos reservados.
+    </footer>
+    <script src="app2.js"></script>
+</body>
+</html>
+
